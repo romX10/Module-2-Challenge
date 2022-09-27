@@ -1,1 +1,176 @@
+*{
+  background-color: gray;
+  color:rgb(249, 238, 118);
+}
+header{
+  display: flex;
+  padding-top: 15px;
+  justify-content: space-between;
+  padding-right: 10px;
+  margin-left: -8px;
+}
+h1{
+  color:gray;
+  background-color: navy;
+  padding: 5px;
+}
+header ul li{
+  display: inline-flex;
+  border-bottom: 3px solid navy;
+  margin-left: 10px;
+}
+.banner {
+  display: flex;
+  padding: 50px;
+  background-image: url("../images/bio-comp-sci.jpg");
+  background-repeat: round;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.banner p{
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  background: transparent;
+  left: 542px;
+  top: 40px;
+}
+.sidebar{
+  height: 980px;
+  width: 140px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  text-align: right;
+  text-decoration: underline;
+  padding-right: 5px;
+  margin-top: 10px;
+}
+#side-card {
+  position: absolute;
+  top: 180px;
+  left: 82px;
+  text-decoration: underline;
+  
+}
+#side-contact {
+  position: absolute;
+  top: 900px;
+  left: 18px;
+  text-decoration: underline;
 
+}
+main {
+  margin-top: 10px;
+  margin-left: 128px;
+  padding-left: 10px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-me {
+  border-left: 5px solid rgb(249, 238, 118);
+  padding-left: 5px;
+}
+.card-container{
+  display: flex;
+  height: 700px;
+  border-left: 5px solid rgb(249, 238, 118);
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  width:100%;
+}
+.card-lg{
+    width: 95%;
+    height: 17%;
+    border: 3px solid rgb(249, 238, 118);
+    display: block;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    background-image: url("../images/comp-sci-background.jpg");
+    background-blend-mode: darken;
+}
+h3{
+    color: navy;
+    background-color: rgb(249, 238, 118);
+    width: 40%;
+    margin-bottom: 0;
+}
+h4{
+    color: navy;
+    background-color: rgb(249, 238, 118);
+    width: 40%;
+    margin-top: 0;
+    margin-bottom: 3px; 
+}
+.card-sm{
+    width: 95%;
+    height: 17%;
+    border: 3px solid rgb(249, 238, 118);
+    margin-bottom: 10px;
+    background-image: url("../images/comp-sci-background.jpg");
+    background-blend-mode: darken;
+}
+.card-sm:hover {
+  background-color: rgb(249, 238, 118);
+  cursor: pointer;
+}
+.card-lg:hover {
+  background-color: rgb(249, 238, 118);
+  cursor: pointer;
+}
+.contact{
+  border-left: 5px solid rgb(249, 238, 118);
+  padding-top: 15px;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+.contact ul{
+  display: inline-flex;
+  list-style-type: none;
+  width: 90%;
+}
+.contact ul li{
+  width: 100%;
+}
+@media screen and (min-width:768px){
+  /*Need to make items appear in center if possible*/
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .card-lg{
+      height: 33%;
+    }
+    .card-sm{
+        width: 45%;
+        height: 33%;
+        border: 3px solid rgb(249, 238, 118);
+        margin-bottom: 5px;
+    }
+    h3 {    
+      color: navy;
+      background-color: rgb(249, 238, 118);
+      width: 40%;
+      position:relative;
+      top: 143px;
+      margin-top: 0;
+      margin-bottom: 3px; 
+    }
+    h4 {
+    color: navy;
+    background-color: rgb(249, 238, 118);
+    width: 40%;
+    position:relative;
+    top: 140px;
+    margin-top: 0;
+    margin-bottom: 3px; 
+    }
+}
